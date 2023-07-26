@@ -35,6 +35,7 @@ out/
 
 target/
 logs/
+.env
 
 ### VS Code ###
 .vscode/
