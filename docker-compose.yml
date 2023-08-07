@@ -3,6 +3,8 @@ version: "3.9"
 services:
   app:
     build: ./
+    ports:
+      - 3000:80
     restart: on-failure
-    env_file: ./.env
+    env_file: ./.env.prod
     tty: true
