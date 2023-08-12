@@ -1,0 +1,8 @@
+logs
+target
+
+.git
+.gitignore
+
+Dockerfile
+.dockerignore
