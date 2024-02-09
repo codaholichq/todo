@@ -1,8 +1,9 @@
-package com.codaholic.todo.domain.entities;
+package com.codaholic.todo;
 
-import com.codaholic.todo.domain.common.BaseEntity;
-import com.codaholic.todo.domain.enums.Status;
-import jakarta.persistence.*;
+import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
+import jakarta.persistence.Table;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
 import lombok.*;

@@ -1,7 +1,5 @@
-package com.codaholic.todo.infrastructure.services;
+package com.codaholic.todo;
 
-import com.codaholic.todo.domain.entities.Todo;
-import com.codaholic.todo.infrastructure.repository.TodoRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.codaholic.todo.domain.enums;
+package com.codaholic.todo;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 

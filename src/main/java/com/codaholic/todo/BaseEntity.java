@@ -1,4 +1,4 @@
-package com.codaholic.todo.domain.common;
+package com.codaholic.todo;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;

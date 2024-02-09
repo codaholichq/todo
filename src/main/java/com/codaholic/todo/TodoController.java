@@ -1,7 +1,5 @@
-package com.codaholic.todo.webapi.controllers;
+package com.codaholic.todo;
 
-import com.codaholic.todo.domain.entities.Todo;
-import com.codaholic.todo.infrastructure.services.TodoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
