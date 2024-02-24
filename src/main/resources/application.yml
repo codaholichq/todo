@@ -8,14 +8,28 @@ spring:
     console:
       enabled: true
   datasource:
-    url: jdbc:h2:mem:testdb
-    driverClassName: org.h2.Driver
+    url: ${DB_URL}
+    driver-class-name: org.postgresql.Driver
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+      
   jpa:
-    database-platform: org.hibernate.dialect.H2Dialect
-    open-in-view: false
-    show-sql: true
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: update
+    properties:
+      jakarta:
+        persistence:
+          create-database-schemas: true
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        default_schema: task
+        ddl-auto: update
+        format_sql: true
+        show-sql: true
+        session:
+          events:
+            log:
+              LOG_QUERIES_SLOWER_THAN_MS=25
 
 server:
   address: ${APP_ADDRESS}
