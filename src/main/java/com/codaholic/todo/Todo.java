@@ -1,5 +1,6 @@
 package com.codaholic.todo;
 
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
@@ -22,9 +23,11 @@ public class Todo extends BaseEntity {
     private String Name;
 
     @NotNull(message = "Start Time cannot be blank")
+    @JsonDeserialize(using = DateDeserializer.class)
     private LocalDateTime StartTime;
 
     @NotNull(message = "End Time cannot be blank")
+    @JsonDeserialize(using = DateDeserializer.class)
     private LocalDateTime EndTime;
 
     @Builder.Default
