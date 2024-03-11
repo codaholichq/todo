@@ -1,5 +1,6 @@
 package com.codaholic.todo;
 
+import io.opentelemetry.instrumentation.annotations.WithSpan;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -13,6 +14,7 @@ import java.util.UUID;
 public class TodoController {
     private final TodoService todoService;
 
+    @WithSpan
     @Autowired
     public TodoController(TodoService todoService) {
         this.todoService = todoService;
