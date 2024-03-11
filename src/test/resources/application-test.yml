@@ -1,0 +1,3 @@
+datasource:
+  url: jdbc:tc:postgresql:16-alpine:///postgres?TC_INITSCRIPT=data.sql&TC_REUSABLE=true
+  driver-class-name: org.testcontainers.jdbc.ContainerDatabaseDriver
